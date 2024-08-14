@@ -1,29 +1,29 @@
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readline  
+
+
+def binary_search(left, right, tar):
+    
+    while left <= right:
+        mid = (left + right) // 2
+        
+        if A[mid] > tar:
+            right = mid - 1
+        elif A[mid] < tar:
+            left = mid + 1
+        else:
+            return 1
+        
+    return 0
 
 N = int(input())
 A = list(map(int, input().split()))
-
 M = int(input())
-find = list(map(int, input().split()))
+tar = list(map(int, input().split()))
 
-def binary(l, r, tar):
-    if l > r:
-        return 0
-    
-    m = (l + r) // 2
-    if A[m] == tar:
-        return 1
-    elif A[m] > tar:
-        return binary(l, m - 1, tar)
-    else:
-        return binary(m + 1, r, tar)
+A.sort()
 
-last = len(A) - 1
-A = sorted(A)
-
-for i in find:
-    result = binary(0, last, i)
-    print(result)
+for i in tar:
+    print(binary_search(0, len(A) - 1, i))
 
 
