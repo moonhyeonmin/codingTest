@@ -36,7 +36,7 @@ jobs:
         python update.py
     - name: Commit changes
       run: |
-        git config --global user.name 'hyuunminn'
+        git config --global user.name 'moonhyeonmin'
         git config --global user.email 'mhm0627@sju.ac.kr'
         git add -A
         git commit -am "auto update README.md"
