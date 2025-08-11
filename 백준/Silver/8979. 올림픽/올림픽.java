@@ -27,7 +27,7 @@ public class Main {
                 rank++;
             } else if (medal[i][0] == medal[k][0] && medal[i][1] > medal[k][1]) {
                 rank++;
-            } else if (medal[i][0] == medal[k][0] && medal[i][1] > medal[k][1] && medal[i][2] > medal[k][2]) {
+            } else if (medal[i][0] == medal[k][0] && medal[i][1] == medal[k][1] && medal[i][2] > medal[k][2]) {
                 rank++;
             }
         }
