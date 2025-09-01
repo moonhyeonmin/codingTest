@@ -12,6 +12,10 @@
 | ----- | ----- |
 |1859. 백만 장자 프로젝트|[링크](./SWEA/D2/1859.%E2%80%85%EB%B0%B1%EB%A7%8C%E2%80%85%EC%9E%A5%EC%9E%90%E2%80%85%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md)|
 |1926. 간단한 369게임|[링크](./SWEA/D2/1926.%E2%80%85%EA%B0%84%EB%8B%A8%ED%95%9C%E2%80%85369%EA%B2%8C%EC%9E%84/README.md)|
+### 🚀 D3
+| 문제번호 | 링크 |
+| ----- | ----- |
+|1208. ［S／W 문제해결 기본］ 1일차 － Flatten|[링크](./SWEA/D3/1208.%E2%80%85%EF%BC%BBS%EF%BC%8FW%E2%80%85%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%E2%80%85%EA%B8%B0%EB%B3%B8%EF%BC%BD%E2%80%851%EC%9D%BC%EC%B0%A8%E2%80%85%EF%BC%8D%E2%80%85Flatten/README.md)|
 ## 📚 백준
 ### 🚀 Bronze
 | 문제번호 | 링크 |
