@@ -1,47 +1,38 @@
-//  일곱 난쟁이
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Main {
+public class Main {
+
     public static void main(String[] args) throws IOException {
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
-
-        List<Integer> res = new ArrayList<>();
-        int[] people = new int[9];
-        for (int i = 0; i < 9; i++) {
-            people[i] = Integer.parseInt(br.readLine());
-        }
+        int[] arr = new int[9];
 
         int sum = 0;
         for (int i = 0; i < 9; i++) {
-            sum += people[i];
+            arr[i] = Integer.parseInt(br.readLine());
+            sum += arr[i];
         }
 
-        int idx1 = -1, idx2 = -1;
+        Arrays.sort(arr);
+        int idx1 = 0, idx2 = 0;
+
         for (int i = 0; i < 8; i++) {
             for (int j = i + 1; j < 9; j++) {
-                if (sum - people[i] - people[j] == 100) {
+                if (sum - arr[i] - arr[j] == 100) {
                     idx1 = i;
                     idx2 = j;
+                    break;
                 }
             }
         }
 
         for (int i = 0; i < 9; i++) {
-            if (i != idx1 && i != idx2) {
-                res.add(people[i]);
-            }
+            if (i == idx1 || i == idx2)
+                continue;
+            System.out.println(arr[i]);
         }
 
-        Collections.sort(res);
-
-
-        for (int i : res) {
-            System.out.println(i);
-        }
     }
 }
